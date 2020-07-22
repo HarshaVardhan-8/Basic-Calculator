@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Calculator</title>
+	<link rel="stylesheet" type="text/css" href="Calci.css">
+</head>
+<body>
+	<input type="text" name="result"><br>
+	<button onclick="resupdate('7')" class="key">7</button>
+	<button onclick="resupdate('8')" class="key">8</button>
+	<button onclick="resupdate('9')" class="key">9</button>
+	<button onclick="resupdate('*')" class="key oper">x</button><br>
+	<button onclick="resupdate('4')" class="key">4</button>
+	<button onclick="resupdate('5')" class="key">5</button>
+	<button onclick="resupdate('6')" class="key">6</button>
+	<button onclick="resupdate('-')" class="key oper">-</button><br>
+	<button onclick="resupdate('1')" class="key">1</button>
+	<button onclick="resupdate('2')" class="key">2</button>
+	<button onclick="resupdate('3')" class="key">3</button>
+	<button onclick="resupdate('+')" class="key oper">+</button><br>
+	<button onclick="resupdate('0')" class="key">0</button>
+	<button onclick="resupdate('.')" class="key">.</button>
+	<button onclick="getres()" class="key">=</button>	
+	<button onclick="resupdate('/')" class="key oper">/</button><br>
+	<button onclick="resclear()" class="clear">Clear</button><br>
+</body>
+<script type="text/javascript">
+	function resupdate(a){
+		document.getElementsByName("result")[0].value += a;
+	}
+	function getres(){
+		var p=document.getElementsByName("result")[0].value;
+		document.getElementsByName("result")[0].value=eval(p); 	
+	}
+	function resclear(){
+		document.getElementsByName("result")[0].value="";
+	}
+</script>
+</html>

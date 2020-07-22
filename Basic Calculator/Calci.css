@@ -1,0 +1,39 @@
+.key{
+	height: 50px;
+	width: 60px;
+	border : 1px solid black;
+}
+input[type="text"]{
+	height: 80px;
+	width: 250px;
+	background: #435665;
+	font-size: 25px;
+	color: white;
+	border : 1px solid black;
+	margin-top: 100px;
+}
+.clear{
+	height: 60px;
+	width: 252px;
+	background:  #DEDEDE;
+	font-size: 25px;
+	color: grey;
+	font-weight: lighter;
+	text-align: center;
+	border : 1px solid black;
+}
+.oper{
+	background: #DF9271;
+	border : 1px solid black;
+}
+.body{
+	padding-top: 500px;
+	padding-bottom: 500px;
+	text-align: center;
+	background: #F1F1F1;
+}
+html{
+	background: #F1F1F1;
+	text-align: center;
+	margin:0 auto; 
+}
